@@ -10,6 +10,7 @@ import (
 	"github.com/154pinkchairs/loshell/internal/iokit"
 )
 
+// Subset prints a subset of lines from a file.
 func Subset(c *cli.Context) error {
 	filePath := c.Args().Get(0)
 	offset, err := strconv.Atoi(c.Args().Get(1))

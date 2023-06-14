@@ -9,6 +9,7 @@ import (
 	"github.com/154pinkchairs/loshell/internal/iokit"
 )
 
+// Count counts the number of lines that match a predicate.
 func Count(c *cli.Context) error {
 	// Get the file path from the command line
 	filePath := c.Args().Get(0)

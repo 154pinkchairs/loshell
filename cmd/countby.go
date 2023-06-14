@@ -10,6 +10,7 @@ import (
 	"github.com/154pinkchairs/loshell/internal/iokit"
 )
 
+// CountBy counts the number of lines that match a predicate.
 func CountBy(c *cli.Context) error {
 	filePath := c.Args().Get(0)
 	predicateName := c.Args().Get(1)
